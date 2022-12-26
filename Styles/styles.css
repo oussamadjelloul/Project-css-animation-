@@ -1,0 +1,95 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+body{
+    background:linear-gradient(#200016,#10001f);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 100vh;
+}
+header h2{
+    color:antiquewhite;
+}
+header{
+    position: fixed;
+    
+    width: 95%;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+}
+a{
+    text-decoration: none;
+    color:antiquewhite;
+}
+header .log{
+    
+    font-size:30px;
+}
+header ul{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    list-style: none;
+}
+header ul li {
+    margin-right: 30px;
+}
+header ul li a {
+    padding :6px 15px ;
+    border-radius: 20px;
+}
+header ul li a:hover, .active{
+    background:white;
+    color:black;
+}
+.main{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main img{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    
+}
+.main ::after{
+    content: '';
+    position:absolute;
+    bottom: 0;
+    height:100px ;
+    width: 100%;
+    background:rgba(67, 1, 64, 0.57);
+}
+
+#moon{
+    mix-blend-mode: screen;
+    transform:translateY(110px) ;
+}
+#mountains7{
+    transform: translateY(-3px);
+}
+#oussama{
+    color:antiquewhite;
+    transform: translateY(-150px);
+    display: none;
+
+}
+
+.content{
+    color:white;
+    padding:30px;
+}
+.content h2 {
+    margin:20px;
+    font-size:30 ;
+}
+.content p {
+    padding:20px;
+}
